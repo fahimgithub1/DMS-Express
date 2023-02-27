@@ -1,0 +1,4556 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.rowMargincont{
+    margin: auto;
+    padding-left: 0;
+    margin-right: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.SectionPadding{
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: var(--logoColor-2);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline;
+}
+
+button{
+    background: var(--logoColor-1);
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 32px;
+}
+
+button:hover{
+    background: var(--logoColor-2);
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    transition: all .5s; 
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c66af;
+    transition: all .5s;
+  }
+
+/* Scroll */
+
+/* navigatin stat */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transform: all 5s;
+}
+
+.TopNev{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .3rem 0;
+    background-color: var(--logoColor-1);
+    color: white;
+}
+
+.TopNev li{
+    font-size: 13px;
+    margin-right: 0.4rem;
+}
+
+.TopNev li:hover, 
+.ContactDiv ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.TopNev ul li .icon{
+    color: white;
+    font-size: 13px;
+}
+
+.ContactDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.ContactDiv ul li:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.ContactDiv ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ContactDiv ul li a i{
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.ContactDiv ul li a i:hover {
+    background-color: white;
+}
+
+.ContactDiv ul li:hover .facbookNav {
+    color: #0f90f3 !important;
+}
+
+.ContactDiv ul li:hover .inastragramNav {
+    color: #e7385c !important;
+}
+
+.ContactDiv ul li:hover .Youtube {
+    color: #ff0000 !important;
+}
+
+.ContactDiv ul li:hover .tuitterNav {
+    color: #1d9bf0 !important;
+}
+
+.Youtube i {
+    width: 28px !important;
+}
+/* Top Nevber end */
+
+/* Mid NevBer start */
+.MidNev{
+    color: black;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.logo a{
+    display: flex;
+    justify-content: center;
+}
+
+.MidNev img{
+   height:  auto;
+   width: 75%;
+}
+
+.Serchber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Serchber form{
+    width: 93%;
+}
+
+input{
+    width: 90%;
+    outline: none;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 5px;
+    border-radius: 6px;
+    border: none;
+    float: right;
+    border-radius: 27px;
+    border: 1px solid var(--logoColor-1);
+    font-size: 17px;
+    color: #000;
+    padding-left: 15px;
+}
+
+input:focus,input:hover{
+    outline: none;
+}
+
+.SelectedIocn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: end;
+    padding-left: 2.5%;
+}
+
+.IconDiv{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.IconDiv i{
+    color: var(--logoColor-1);
+}
+
+.IconDiv:not(:last-child){
+    margin-right: .5rem;
+}
+
+.IconDiv p{
+    margin-bottom: 0 ;
+    font-size: 12px;
+}
+
+.IconDiv i{
+    font-size: 26px;
+    margin-right: 0.4rem;
+}
+
+.IconDiv a{
+    color: rgb(5, 5, 5);
+}
+
+.Count{
+    background: var(--logoColor-2);
+    width: 29px;
+    height: 18px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.Serchber form{
+    position: relative;
+}
+
+.Serchber label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--logoColor-1);
+    height: 40px;
+    width: 50px;
+    padding-top: 8px;
+    border-radius: 0 22px 26px 0;
+    text-align: center;
+    color: white;
+}
+
+.NavCart{
+    position: relative;
+    height: 50px;
+}
+
+.CartSummaryNav{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    font-size: 14px;
+    font-weight: 400 !important;
+    padding: 17px;
+    width: 350px;
+    background-color: white;
+    color: #8d8686;
+    box-shadow: 0 0 10px #c9c9c9;
+    border-radius: 7px;
+}
+
+.NavCart:hover .CartSummaryNav{
+    display: block;
+}
+
+.CartUpperSummary .upperRight{
+    text-align: right;
+}
+
+.CartUpperSummary .upperRight .Price{
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+.CartNabBtn{
+    width: 100%;
+    text-align: center;
+    background: var(--logoColor-1);
+    color: white;
+    padding: 11px 5px;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.CartNabBtn:hover{
+    background: var(--logoColor-2);
+}
+
+.CartNabBtn1{
+    background-color: rgb(204, 204, 204);
+}
+
+.CartNabBtn a{
+    width: 100%;
+    color: white;
+}
+
+.CartNabBtn1 a{
+    color:  rgb(90, 90, 90);
+}
+
+.CartSummaryProduct{
+    margin: 2rem 0;
+}
+
+.CartProductTitle{
+    font-weight: 500;
+}
+
+.CartNavForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.CartNavForm .CartProductQuantity{
+    display: flex;
+    align-items: center;
+}
+
+.CartNavForm .CartProductQuantity label{
+    margin-right: 6px;
+}
+
+.CartNavForm .CartProductQuantity input{
+    border: 1px solid gray;
+    width: 40px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.CartNavForm .CartProductQuantity button{
+    background: none;
+    border: none;
+}
+
+.CartNavForm .CartProductQuantity i{
+    color: var(--logoColor-1);
+}
+/* Mid NevBer end */
+
+/* Bootom Navbar start*/
+.BottomNev{
+    background-color: var(--logoColor-1) !important;
+    z-index: 999;
+}
+
+.DestopNavCtagoris{
+    background-color: var(--logoColor-2);
+    justify-content: space-between;
+    padding: 10px 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.DestopNavCtagoris i{
+    float: right;
+    font-size: 24px;
+}
+
+.horizontal-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    background-color: var(--logoColor-1);
+}
+
+.horizontal-menu ul li{
+    margin-right: .5rem;
+    font-size: 15px;
+}
+
+.horizontal-menu ul li a{
+    color: #ffffff !important;
+}
+
+.horizontal-menu ul li a:hover{
+    color: var(--logoColor-2);
+    cursor: pointer;
+}
+
+.ShowInTabe{
+    display: none;
+}
+
+.ChnagePositiono{
+    position: fixed;
+    top: 50PX;
+}
+
+.DestopNavCtagoris{
+    position: relative !important;
+}
+
+.NavClickAction{
+    position: absolute !important;
+    display: none;
+    margin-top: 11px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 5px #a79f9f;
+    width: 215px;
+    padding: 8px 0;
+    font-weight: 500;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.CatagorisIcinHideCros{
+    display: none;
+}
+/* Bootom Navbar end*/
+
+
+.ShowInTabe a{
+    color: white;
+}
+
+.MoboTop{
+    background-color: var(--logoColor-1);
+    color: white;
+    padding: 5px 0;
+}
+
+.MovboBottom{
+    padding: 8px 18px;
+    background-color: var(--logoColor-1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.MovboBottom .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+}
+
+.MovboBottom i{
+    font-size: 30px;
+    color: white;
+}
+
+.MovboBottom a {
+    color: white;
+}
+
+.MovboBottom a:hover{
+    color: var(--DestopCatagori);
+}
+
+.LogoTabe{
+    text-align: center;
+}
+
+.LogoTabe img{
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 5px white;
+    border-radius: 4px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.CatagorisTabe i{
+    float: left;
+}
+
+.CartTabe i{
+    float: right;
+}
+
+.CartTabe i,
+.CatagorisTabe i{
+    font-size: 32px !important;
+    margin-top: 20px;
+    color: var(--logoColor-1);
+}
+
+.MoboTop .CatagorisTabe i, 
+.MoboTop  .CartTabe i{
+    color: white;
+}
+
+.navbar-toggler{
+    padding: 0;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0;
+    color: white;
+}
+
+.navbar-toggler:focus{
+    padding: 0;
+    bottom: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-item {
+    color: #000 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.NavCaragoris{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    background-color: rgb(237 237 237);
+    width: 60%;
+    color: rgb(15, 15, 15) !important ;
+    padding: 0.5rem 0.5rem;
+    height: 100%;
+    overflow: scroll;
+    z-index: 100;
+}
+
+.dropdown{
+    display: block !important;
+}
+
+.dropdown-menu{
+    --bs-dropdown-min-width: 0rem !important;
+    position: relative !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    --bs-dropdown-padding-y: 0.0rem !important;
+}
+
+.nav-link{
+    color: black !important;
+    padding: .1rem 0rem;
+}
+
+.navbar{
+    padding-top: 0;
+}
+
+.MobileMwnuTitle{
+    width: 100%;
+    background-color: var(--navColor);
+    display: flex;
+    justify-content: space-between;
+    color: var(--logoColor-1);
+}
+
+.NavCaragoris ul li{
+    padding: 6px;
+}
+
+.NavCaragoris ul li i{
+    font-size: 24px;
+}
+
+.nav-item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 25px;
+}
+
+.nav-item:hover{
+    background-color: var(--logoColor-1);
+    color: white;
+}
+
+.nav-item i {
+    color: black;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.nav-item:hover .nav-link{
+    color: white !important;
+}
+
+.nav-item:hover .navLinkI{
+    color: white !important;
+}
+
+
+.NavSubBrance{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item:not(:last-child){
+    border-bottom: 1px solid var(--logoColor-1);
+}
+
+.nav-item img{
+    height: 22px;
+    width: 20px;
+    margin-right: .2rem ;
+}
+
+.nav-item span{
+    background: #cdcdcd;
+    padding: 2px 4px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link div{
+    display:  inline !important;
+}
+
+.active{
+    color: var(--logoColor-2) !important;
+}
+
+.DeopDownMenuMobiel{
+    background-color: var(--logoColor-1);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.DeopDownMenuMobiel .DeopDownDiv{
+    margin-bottom: 10px;
+}
+
+.DeopDownMenuMobiel h6{
+    color: white;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+
+.DeopDownMenuMobiel ul li{
+    display: block;
+    padding: 3px;
+}
+
+.HotDeals{
+    height: 100%;
+    background: linear-gradient(-28deg, #0a4a63, #2663a3);
+    padding: 10px;
+    border: 1px solid #3d3f7e;
+    margin-top: -1px;
+    animation: gradient 5s  infinite alternate linear;
+    transition: all 5s;
+}
+
+@keyframes gradient {
+    0% {
+		background: linear-gradient(-28deg, #0a4a63, #2663a3);
+
+        transition: all 5s;
+	}
+	50% {
+		background: linear-gradient(50deg, #0a4a63, #2663a3);
+
+        transition: all 5s;
+	}
+	100% {
+		background: linear-gradient(28deg, #0a4a63, #2663a3);
+
+        transition: all 5s;
+	}
+}
+/* nav for tabe and mobile end */
+/* navigatin end */
+
+/* Copy form templet start */
+.NavSubBranceLI{
+    padding: 0 !important;
+    position: relative;
+    /* z-index: 10; */
+}
+
+.category-sub-menu {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background: #ffffff;
+    padding: 15px 10px;
+    width: 900px;
+    min-height: calc(100% - 10px);
+    border: 1px solid rgba(34, 34, 34, 0.1);
+    /* z-index: 100; */
+    display: none;
+}
+
+.NavSubBranceHover:hover .TabletopSubMenu{
+    display: block;
+}
+
+.category-sub-menu.bg-1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.category-sub-menu h4 {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+.category-sub-menu h4 span {
+    font-size: 25px;
+    line-height: 100%;
+    color: #fe5502;
+}
+
+.category-sub-menu ul{
+    padding-left: 10px;
+}
+
+.category-sub-menu ul li {
+    display: block;
+    font-size: 14px;
+    height: 33px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.category-sub-menu ul li:last-child {
+    margin-bottom: -13px;
+}
+
+.category-sub-menu ul li a {
+    font-weight: 400;
+    color: #222222;
+}
+.category-sub-menu ul li a:hover,
+.category-sub-menu ul li a:focus {
+    color: #fe5502;
+}
+.category-sub-menu img {
+    margin-top: 9px;
+    border-radius: 10px;
+}
+.banner .category-list .category-item:hover .category-sub-menu,
+.banner .category-list .category-item:focus-within .category-sub-menu {
+    padding: 25px;
+    top: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+/* nav end */
+
+/* heros start */
+.HerosSection{
+    margin-top: 179px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.HerosSection img{
+    width: 100%;
+}
+
+.carousel{
+    border: 1px solid var(--logoColor-1);
+    padding: 0;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target],
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background-color: var(--logoColor-2);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background-color: none !important;
+    background: transparent !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 65px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+    background: #920d03;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0%;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.249);
+}
+
+.HerosText{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.HerosTextunder{
+    padding: 20px;
+    color: white;
+    max-width: 508px;
+}
+
+.HerosTextunder h5{
+    font-size: 55px;
+    text-transform: capitalize;
+}
+
+.HerosTextunder p{
+    font-size: 55px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: var(--logoColor-1);
+}
+
+.HerosTextunder button{
+    box-shadow: 0 0 5px #585858;
+    padding: 10px 32px;
+}
+/* carusle end */
+
+.ServicesIconMainDIV{
+    border: 1px solid #d5d5d5;
+    padding: 10px 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+}
+
+.PerServocesDiv{
+    margin-bottom: 0.3rem;
+    align-items: center;
+}
+
+.PerServocesDiv:not(:last-child){
+    border-right: 1px solid black;
+}
+
+.PerServocesDiv .Freeshoping{
+    background-color: rgb(255 37 37);
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.PerServocesDiv .Policy{
+    background-color: #2cc97a;
+}
+
+.PerServocesDiv .Support{
+    background-color: #b487db;
+}
+
+.PerServocesDiv .Points{
+    background-color: var(--logoColor-2);
+}
+
+.PerServocesDiv .payment{
+    background-color: #72a4ff;
+}
+
+.ServicesImg{
+    background-color: var(--logoColor-1);
+    margin-right: 7px;
+    height: 60px;
+    border-radius: 4px;
+    display: flex;
+    min-width: 60px;
+    max-width: 100px;
+    /* margin: auto; */
+    margin-bottom: .5rem;
+}
+
+.ServicesImg a{
+    margin: auto;
+}
+
+.ServicesImg a i{
+    font-size: 38px;
+    color: white;
+}
+
+.ServicesText{
+    color: #888;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ServicesText .servicesTitel{
+    text-transform: uppercase;
+}
+
+.ServicesText a:hover{
+    color: var(--logoColor-2);
+}
+
+.servicesP{
+    font-size: 13px;
+}
+
+@media screen and (min-width: 1200px) {
+    .W20{
+        width: 20%;
+    }
+}
+
+/* Brand section start */
+.Titelh4{
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    color: var(--logoColor-1);
+}
+
+.Titelh4 h4{
+    font-size: 35px !important;
+    font-weight: 600;
+}
+
+
+.owl-item{
+    padding: 5px;
+}
+
+.owl-item .item{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgb(207, 207, 207);
+    height: 142px;
+    width: auto;
+}
+
+.owl-item .item:hover{
+    box-shadow: 0 0 5px rgb(205 205 205);
+}
+
+.owl-item .item img{
+    height: 100%;
+    width: 100%;
+}
+
+.owl-carousel {
+    padding: 0;
+}
+/* Brand section end */
+
+/* Categories section start */
+    .CategoriesDiv{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .Categorieitem{
+        width: 11.11%;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .Categorieitem img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Categorieitem .CataIcon{
+        font-size: 50px;
+        box-shadow: 0 0 6px rgb(207 207 207);
+        padding: 9px;
+        border-radius: 50%;
+        height: 86px;
+        width: 86px;
+        margin: auto;
+        color: #920d03;
+        margin-bottom: 0.5rem;
+    }
+
+    .Categorieitem .CataIcon:hover{
+        box-shadow: 0 0 8px rgb(205 205 205);
+    }
+
+    .Categorieitem p{
+        font-weight: 700;
+        font-size: 13px;
+        margin: 0;
+    }
+/* Categories section end */
+
+/* vegetabels section start */
+    .Hadline{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Hadline{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .SeeAll a{
+        color: var(--logoColor-1);
+        font-weight: 600;
+    }
+
+    .CatagorySection{
+        /* background-color: #f1f1f1; */
+        background-color: var(--section-bg);
+        border-radius: 7px;
+        padding: 40px 20px;
+    }
+
+    .FoductList{
+        padding: 7px;
+        padding-bottom: 0;
+    }
+
+    .ProductContiner .Hadline{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ProductContiner .FoductList{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+
+    .PerProductPadding{
+        padding: 0px 7px;
+    }
+
+    .Product{
+        border-radius: 12px;
+        padding: 4px;
+        overflow: hidden;
+        box-shadow: 0 0 5px #c9c9c9;
+        background-color: white;
+        border: 1px solid transparent;
+    }
+
+    .Product:hover{
+        border: 1px solid var(--logoColor-2);
+    }
+
+    .ProductImg{
+        overflow: hidden;
+        height: 250px;
+        margin-bottom: 0.5rem;
+        border-radius: 12px;
+    }
+
+    .ProductImg img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .FoductList img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .productText{
+        text-align: center;
+    }
+
+    .NamePrice .Name{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: .3rem;
+        height: 26px;
+        overflow: hidden;
+    }
+
+    .NamePrice .Quantity{
+        font-size: 15px;
+        margin-bottom: .8rem;
+        font-weight: 600;
+        color: var(--logoColor-1);
+    }
+
+    .NamePrice .Price{
+        font-size: 18px;
+        margin-top: .6rem;
+        font-weight: 600;
+        margin-bottom: .6rem;
+        height: 26px;
+    }
+
+    .discount{
+        text-decoration: line-through;
+        margin-right: .2rem;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .Incement{
+        height: 45px;
+        background-color: #e2f2f8;
+        width: 90%;
+        margin: auto;
+        border-radius: 35px;
+        margin-bottom: 1rem;
+        box-shadow: 0 0 5px #c6c6c6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .Incement .Plus,
+    .Incement .Minnus{
+        font-size: 25px;
+        height: 35px;
+        width: 35px;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: var(--logoColor-1);
+    }
+
+    .ProductBtnIncement button{
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 0.2rem;
+        margin-bottom: 1.2rem;
+        background-color: var(--logoColor-1);
+    }
+
+    .ProductBtnIncement button:hover{
+        background-color: var(--logoColor-2);
+    }
+
+    .Product{
+        position: relative;
+    }
+
+    .DisPersent{
+        position: absolute;
+        padding: 5px; 
+        border-radius: 6px;
+        height: 35px;
+        width: 40px;
+        background-color: var(--logoColor-1);
+        color: white;
+        z-index: 10;
+    }
+/* vegetabels section end */
+
+/* offer page start */
+.ProductImg{
+    position: relative;
+}
+
+.TimeCounting{
+    position: absolute;
+    background-color: var(--logoColor-2);
+    width: 79%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-weight: 600;
+    margin-top: -33px;
+    width: 150px;
+    left: calc((100% - 150px)/2);
+    border-radius: 12px;
+    color: white;
+}
+
+.OfferPage .ProductImg{
+    position: relative;
+}
+
+.ProductSection{
+    margin-bottom: -20px;
+}
+
+.OfferPage .DisPersent{
+    position: absolute;
+    top: 0;
+    top: 2.5px;
+}
+
+.OfferPage a:hover .TimeCounting{
+    color: rgb(255, 255, 255);
+}
+
+.TimeCounting:hover{
+    color: rgb(255, 255, 255);
+}
+
+.OfferPage .productText{
+    margin-top: 33px;
+}
+/* offer page end */
+
+/* add banner start */
+.BannerImage{
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.BannerImage img{
+    width: 100%;
+    height: 100%;
+}
+/* add banner end */
+
+/* last week section start */
+.LastWeekText .WeeKPara1{
+    text-transform: uppercase;
+    display: inline;
+    padding: 6px 25px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    background-color: var(--logoColor-2);
+    font-weight: 600;
+
+}
+
+.LastWeekText h3{
+    font-size: 28px !important;
+    font-weight: 600;
+    color: var(--logoColor-1);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.LastWeekText .WeeKPara2{
+    margin-bottom: 1.5rem;
+}
+
+.LastWeekText button{
+    color: black;
+    background: none;
+    font-weight: 500;
+    padding: 6px 41px;
+    border: 4px solid var(--logoColor-1);
+}
+
+.LastWeekText button:hover{
+    background-color: var(--logoColor-1);
+    color: white;
+    border-color: transparent;
+}
+
+.LastWeekTextCrosul .item{
+    height: min-content;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1px;
+    background-color: white;
+}
+
+.LastWeekTextCrosul .ProductImg{
+    height: 165px;
+    margin-bottom: 2px;
+}
+
+.LastWeekTextCrosul .NamePrice .Price{
+    margin-top: 0;
+    margin-bottom: .4rem;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement .Incement{
+    margin-top: 0;
+    margin-bottom: .4rem;
+    height: 33px;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement .Incement .Plus, 
+.LastWeekTextCrosul .ProductBtnIncement .Incement .Minnus{
+    height: 27px;
+    width: 27px;
+    font-size: 19px;
+}
+
+.LastWeekTextCrosul .ProductBtnIncement button{
+    font-size: 13px;
+    padding: 6px 13px;
+    margin-bottom: .5rem;
+}
+
+.LastWeekProducr{
+    background: #ffffff;
+    padding: 12px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+.CarusalTitel{
+    position: relative ;
+}
+
+.LastWeekProducr .owl-nav{
+    position: absolute;
+    top: -65px;
+    right: 0;
+    color: var(--logoColor-1);
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    margin-right: 1rem !important;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: var(--logoColor-2);
+    text-decoration: none;
+}
+
+.owl-nav{
+    height: 44px !important;
+    overflow: hidden;
+    padding: 0;
+}
+
+.owl-nav button{
+    padding: 0;
+    overflow: hidden;
+}
+
+.owl-nav span{
+    overflow: hidden;
+    padding: 0;
+    margin-top: -3px;
+}
+/* last week section end */
+
+/* Latest news Start */
+.LatestNews h4{
+    font-size: 21px !important;
+    color: black;
+}
+
+.NewDiv{
+    position: relative;
+}
+
+.NewDiv .Highlight{
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 6px;
+    height: 35px;
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+    top: 5px;
+    right: 5px;
+    border: 1px solid var(--logoColor-1);
+}
+
+.BloogText .Date{
+    text-align: left;
+    font-size: 14px;
+}
+
+.BloogText .Date span{
+    margin-right: .5rem;
+    text-align: left;
+}
+
+.BloogText .title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    height: 58px;
+    overflow: hidden;
+}
+
+.NewImage{
+    overflow: hidden;
+    height: 250px;
+    margin-bottom: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid var(--logoColor-1);
+}
+/* Latest news end */
+
+/* Footer start */
+footer{
+    margin-top: 40px;
+}
+
+.FristFooter img{
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+footer{
+    padding-bottom: 40px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    color: #bbbbbb;
+}
+
+footer ul a{
+    color: #bbbbbb;
+}
+
+footer ul li{
+    margin: 0;
+    padding: 4px 0;
+    display: block;
+}
+
+.SocilaIcon li{
+    display: inline;
+    margin-right: .5rem;
+    text-align: center;
+    font-size: 19px;
+}
+
+.fotrerpare{
+    color: rgb(192, 191, 191);
+}
+
+.LastFooter{
+    color: #979797;
+    margin-bottom: 0px;
+    margin-top: 24px;
+    padding-top: 0 !important;
+}
+
+.LastFooter a{
+    color: #979797;
+}
+
+.LastFooter p{
+    margin-bottom: 7px;
+}
+/* footer end */
+
+/* product page start */
+.ProductBg{
+    height: 550px;
+    width: 100%;
+    background-image: url(../images/procuctbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.productBg h1{
+    max-width: 425px;
+    margin: auto;
+    text-align: center;
+    color: var(--logoColor-2);
+    color: white;
+    padding: 10px;
+    font-size: 34px;
+    padding-top: 40px;
+}
+
+.ProductDaitlesdiv{
+    background-color: var(--section-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgb(207 207 207) 0px 0px 5px;
+}
+
+.ProductDaitlesdiv img{
+    border-radius: 9px;
+}
+
+.PriceP{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--logoColor-1);
+    margin-bottom: 1rem !important;
+}
+
+.PriceP span{
+    margin-left: .3rem;
+    color: rgb(79, 79, 79);
+}
+
+.SmalDisciption{
+    font-size: 20px;
+    color: rgb(52, 52, 52);
+    margin-bottom: 1rem !important;
+    overflow: hidden;
+}
+
+.ProductBtn button{
+    font-weight: 400 !important;
+    background-color: var(--logoColor-1);
+    width: 200px;
+}
+
+.ProductBtn button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.ProductBtn button i{
+    margin-right: .5rem;
+}
+
+.ProductBtn button:not(:last-child){
+    margin-bottom: 0.5rem;
+
+}
+
+.CataTagId {
+    margin-bottom: 1.2rem;
+}
+
+.CataTagId p {
+    margin-bottom: .5rem;
+}
+
+.CataTagId p span{
+    font-weight: 600;
+}
+
+.RightSide .ProductBtnIncement{
+    justify-content: left !important;
+    width: 200px;
+    margin-bottom: 1.2rem;
+}
+
+.RightSide .Incement{
+    width: 200px;
+}
+
+.VariantColor{
+    margin-bottom: 1rem;
+}
+
+.VariantColor span{
+    font-weight: 500;
+}
+
+.ProductColor button{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 0;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    outline: 4px solid transparent;
+}
+
+.ProductColor button:hover{
+    outline: 4px solid black;
+}
+
+.ColorBtn1:hover{
+    background-color: var(--logoColor-1);
+}
+
+.ColorBtn2{
+    background-color: rgb(238, 7, 7);
+}
+
+.ColorBtn3{
+    background-color: blue;
+}
+
+.ColorBtn2:hover{
+    background-color: rgb(238, 7, 7);
+}
+
+.ColorBtn3:hover{
+    background-color: blue;
+}
+
+.Variant{
+    margin-top: .5rem;
+}
+
+.VariantImgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Variant .VariantImgs{
+    margin-top: .5rem;
+}
+
+.Variant .VarImg{
+    width: 89px;
+    height: 73px;
+    border-radius: 5px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.Variant .VarImg img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+    /* tabe review and disciption start */
+    .ReviewAndDis{
+        margin-top: 30px;
+    }
+
+    .nav-tabs li,
+    .nav-tabs li button{
+        width: 150px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-tabs .nav-item{
+        background: none;
+        border: none;
+        margin-right: .5rem;
+        padding: 0;
+        bottom: none;
+    }
+
+    .nav-tabs li button{
+        padding: 6px 30px;
+        font-size: 20px;
+        background: none !important;
+        border-radius: 15px 15px 0 0  !important;
+    }
+
+    .nav-tabs li button:hover{
+        background: var(--logoColor-2) !important;
+    }
+
+    .nav-tabs li:hover{
+        background: none;
+    }
+    
+    .nav-tabs li .active{
+        color: white !important;
+        border: none;
+        background: var(--logoColor-2) !important;
+    }
+    
+    .nav-tabs li .active button{
+        background: var(--logoColor-2) !important;
+    }
+    
+    .tab-content .tab-pane{
+        padding: 20px ;
+        border-radius: 10px;
+        border-top: 1px solid rgb(219, 213, 213);
+    }
+
+    .tab-content .active{
+        color: rgb(4, 4, 4) !important;
+        background-color: #bee1ef;
+    }
+
+    .Disciption{
+        font-size: 19px;
+    }
+
+    .ReviewDiv2{
+        height: 350px;
+        overflow-x: auto;
+    }
+
+    .ReviewDiv label,
+    .ReviewDiv input{
+        display: block !important;
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .ReviewDiv label{
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+
+    .ReviewDiv input{
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv textarea{
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        margin-bottom: .5rem;
+        border: 1px solid var(--logoColor-1);
+    }
+
+    .ReviewDiv h4{
+        text-align: left;
+    }
+
+    .PatingDiv p{
+        font-weight: 600;
+        margin-bottom: .2rem;
+        text-align: left;
+    }
+
+    .PatingDiv ul {
+        text-align: left;
+    }
+
+    .PatingDiv ul i{
+        color: var(--logoColor-2);
+        margin-right: .3rem;
+        margin-bottom: .5rem;
+    }
+
+    .ReviewDiv button{
+        background-color: var(--logoColor-1) !important;
+        margin: auto;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+
+    .ReviewDiv button:hover{
+        background-color: var(--logoColor-2) !important;
+    }
+
+    .PersonReview{
+        display: flex;
+    }
+
+    .PersonImg{
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin-right: .7rem;
+    }
+
+    .PersonImg img{
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .PersonReview .perosName{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: .3rem;
+    }
+
+    .PersonReview .pesonReview{
+        text-align: left !important;
+    }
+
+    .PersonReview .PatingDiv i{
+        margin-right: 0;
+        font-size: 14px;
+    }
+    /* tabe review and disciption end */
+
+    /* banner start */
+    .BannerEihttext{
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .BannerEihttext .HerosTextunder{
+        text-align: center;
+    }
+
+    .BannerEihttext .HerosText{
+        justify-content: right;
+        padding-right: 5%;
+    }
+    /* banner end */
+
+.sideProduct:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.sideProduct .ProductImg{
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.sideProduct .productText .Price{
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    margin-right: .5rem;
+    font-weight: 600;
+}
+
+.sideProduct .productText .ProductBtnIncement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideProduct .productText .ProductBtnIncement button{
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.panel-body img {
+    width: 23%;
+    max-width: 66px;
+    margin-bottom: 10px;
+}
+
+.PeoudctBigImgage{
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.PeoudctBigImgage img{
+    height: 100% !important;
+    max-height: 100%;
+}
+
+.AnotherImg{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.AnotherImg img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.AnotherImg img:not(:last-child){
+    margin-right: .5rem;
+}
+
+.ChargeDiv{
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.ChargeDiv .title{
+    margin-bottom: 15px;
+    color: var(--cartColor);
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+
+.ChargeDiv .panel-body p{
+    margin-bottom: 10px;
+}
+/* product page end */
+
+/* Catagoirs Page start */
+.CampaignsBannerBotom{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.CampaignsSection{
+    margin-top: 166px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.AllProductImg{
+    height: 206px;
+    max-height: 206px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.AllProductImg div{
+    border: 1px solid var(--logoColor-1);
+    border-radius: 7px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.AllProduct .tab-content{
+    padding: 1.7rem 2px;
+    padding-bottom: 0rem !important;
+}
+
+.Catagori .Catagori2{
+    border-radius: 7px;
+    box-shadow: 0 0 5px #cbc9c9;
+}
+
+.Catagori h5{
+    padding: 10px 15px;
+    background-color: var(--logoColor-1);
+    color: white;
+    font-weight: 700;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 0;
+}
+
+.TaiterSpan{
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 600;
+}
+
+.Catagori3{
+    padding: 20px;
+    font-size: 14PX;
+}
+
+.Catagori3:not(:last-child){
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.Catagori3 a{
+    padding: 5px 0px;
+    color: rgb(71, 71, 71);
+    margin-bottom: 0;
+    display: block;
+}
+
+.Catagori3 a:hover{
+    color: var(--logoColor-2);
+}
+
+.priceLabel{
+    background-color: var(--logoColor-2);
+    height: 12px;
+    border-radius: 7px;
+    position: relative;
+    margin-top: .7rem;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.pricelavel1, .pricelavel2{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgb(46, 45, 45);
+    position: absolute;
+    cursor: pointer;
+    top: -3.5px;
+    box-shadow: 0 0 0 1px rgb(129, 129, 129) ;
+}
+
+.pricelavel1{
+    left: 0;
+}
+
+.pricelavel2{
+    right: 0%;
+}
+
+.priceInput{
+    margin-top: .7rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.priceInput input{
+    border: 1px solid #d8d8d8;
+    color: #211e1f;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    width: 50px;
+    float: none;
+    height: 36px;
+    max-width: 900px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: 14px;
+}
+
+.MainCatagoriDiv{
+    padding-top: 50px;
+}
+
+    /* filter part start*/
+    .CtagorisFilter{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: 1.5rem; */
+        background: #d8d8d8;
+        padding: 10px 8px;
+        border-radius: 5px;
+        border: 1px solid #d1cccc;
+        color: #444;
+    }
+
+@media screen and (min-width: 1100px) {
+    .CatagorisPage{
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+    }
+
+    .CatagorisPage .tab-content{
+        margin-bottom: 0 !important;
+    }
+}
+
+.CtagorisFilter select{
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: #744444;
+    width: 120px;
+    max-width: 120px;
+}
+
+.CtagorisFilter select:focus{
+    outline: none;
+}
+
+.CatagoriFilter{
+    background: #ff863f;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    display: none;
+}
+
+.ShowCatagoritStapes{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.tab-content .PerProductPadding{
+    margin-bottom: 20px;
+}
+
+.CategoryBanner{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* Catagoris Page end */
+
+/* Bloge Page start */
+.BlogSection{
+    padding-top: 20px;
+    margin-bottom: -1rem;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .BlogSection{
+        margin-bottom: 0rem;
+    }
+}
+
+.AboutUsPerDiv2{
+    max-width: 800px;
+    margin: auto;
+}
+
+.AboutUsPerDiv{
+    margin-bottom: 1rem;
+}
+
+.AboutUsLeft{
+    color: black !important;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+    margin-bottom: -39px;
+}
+
+.AboutUsLeft .row{
+    /* width: 90%; */
+    max-width: 868px;
+    margin: auto;
+}
+
+.AboutUsPerDiv p{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: .7rem;
+}
+
+.RightPerDiv{
+    margin-bottom: 30px;
+    background: #ededed;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.AboutUsPerDiv h5{
+    margin-bottom: 1rem;
+    color: var(--logoColor-1);
+    font-weight: bold;
+    font-size: 1.45rem;
+}
+
+.AboutUsLeft a:hover{
+    color: var(--logoColor-2);
+}
+
+.AboutUsLeft div p a{
+    font-weight: bold;
+}
+
+.AboutUsLeft img{
+    width: 95%;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+.AboutUsRight{
+    color: black;
+}
+
+.AboutUsRight h5{
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+.AboutUSLi{
+    display: flex;
+    align-items: center;
+    font: 20px;
+}
+
+.AboutUSLi:not(:last-child){
+    margin-bottom: .7rem;
+}
+
+.AboutUsRight .IconDivAboutus{
+    margin-right: 0.7rem;
+    color: white !important;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 59px;
+    width: 62px;
+    border: 1px solid #920d03;
+}
+
+.AboutUsRight .IconDivAboutus img{
+    height: 100%;
+}
+
+.AboutUsRight .IconDivAboutus i{
+    color: white !important;
+}
+
+.AboutUsRight .LinkDiv{
+    font-size: 15px !important;
+    font-weight: 500;
+    padding: 0px 10px !important;
+}
+
+.AboutUsRight .LinkDiv a{
+    color: rgb(101, 101, 101);
+}
+
+.AboutUsRight .LinkDiv a:hover{
+    color: var(--logoColor-1);
+}
+
+.LinkFrist{
+    padding: 0px 10px !important;
+    font-size: 15px !important;
+    padding-top: 7px !important;
+    border-top: 1px solid rgb(154, 154, 154);
+}
+
+.PerBlogDIv{
+    padding: 11px;
+    border-radius: 10px;
+    height: min-content;
+    font-size: 18px;
+}
+
+.PerBlogDIvCol:not(:last-child){
+    padding-bottom: 25px;
+}
+
+.PerBlogDIv h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: .8rem;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv ul{
+    font-size: 15px;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+.PerBlogDIv ul li i{
+    margin-right: .2rem;
+}
+
+.PerBlogDIv ul li:not(:last-child){
+    margin-right: .5rem;
+}
+
+.PerVlogImg{
+    width: 100%;
+    overflow: hidden;
+}
+
+.PerBlogDIv img{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+    border-radius: 7px;
+    max-height: 240px;
+}
+
+.PerBlogDIv p{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.PerBlogDIv .BlogDatilsL{
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    color: var(--logoColor-1);
+}
+
+.PerBlogDIv .BlogDatilsL:hover{
+    color: var(--logoColor-2);
+}
+
+.BlogBanner{
+    border: 1px solid var(--logoColor-1);
+}
+
+.BlogBnnar {
+    padding-top: 20px !important;
+    padding-bottom: 30px;
+}
+/* Blog page end */
+
+/* Blog Daitles start */
+.DaitlesPerDIv {
+    max-width: 850px;
+    margin: auto;
+}
+
+.DaitlesPerDIv ul{
+    margin-bottom: 25px;
+}
+
+.DaitlesPerDIv p{
+    margin-bottom: 25px;
+}
+
+.DaitlesPerDIv .PerBlogDIv{
+    padding-top: 0;
+}
+
+.DaitlesPerDIv .MainTilte{
+    font-weight: bolder;
+}
+
+.DaitlesPerDIv h3{
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.DaitlesPerDIv .imageDivBlog{
+    overflow: hidden;
+}
+
+.DaitlesPerDIv img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    max-height: 400px;
+    margin-bottom: 25px;
+}
+
+.DaitlesPerDIv p{
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.DaitlesPerDIv p:not(:last-child){
+    margin-bottom: .7rem;
+}
+
+.DaitlesPerDIv:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.CommentCount{
+    font-size: 24px;
+}
+
+.CommentCount span{
+    margin-right: .5rem;
+}
+
+.BlogBtn .button{
+    font-size: 16px;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--logoColor-1);
+}
+
+.BlogBtn .button:hover{
+    color: white;
+    cursor: pointer;
+    background-color: var(--logoColor-2);
+}
+
+.ShowComment{
+    padding: 10px;
+    margin-top: .5rem;
+}
+
+.ShowComment .NmaeCommenter{
+    font-size: 20px;
+    color: rgb(30, 30, 30);
+    font-weight: 500;
+}
+
+.ShowComment .CommentDate{
+    font-size: 14px;
+}
+
+.ShowComment .SubmitedCommet{
+    padding: 20px;
+    font-size: 15px;
+    margin-top: .6rem;
+    border-radius: 7px;
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.ShowComment .SubmitedCommet span{
+    display: block;
+}
+
+.ShowComment .SubmitedCommet .CommentReply{
+    padding: 5px 11px;
+    border-radius: 7px;
+    color: white;
+    margin-top: 1rem;
+    background: var(--logoColor-2);
+    font-size: 13px;
+}
+
+.ReolyForm{
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.ReolyForm form div{
+    display: block;
+    padding-top: 1rem;
+}
+
+
+.ReolyForm form label{
+    display: block;
+    width: 100%;
+}
+
+.ReolyForm form input{
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: .5rem;
+    max-width: 400px;
+    border: 1px solid #a8a8a8 !important;
+}
+
+.ReolyForm form textarea{
+    border: 1px solid #a8a8a8 !important;
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: .5rem;
+    height: 150px;
+    border-radius: 7px;
+    font-size: 16px ;
+    padding: 10px;
+}
+
+.ReolyForm form textarea:focus{
+    border: 1px solid black !important;
+    outline:  none !important;
+}
+
+.ReolyForm button{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 7px;
+    color: white;
+    margin: auto;
+    margin-top: 1rem;
+    background: var(--logoColor-1);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ReolyForm button:hover{
+    background: var(--logoColor-2);
+}
+
+.BlogComment{
+    max-width: 850px;
+    margin: auto;
+}
+
+.BlogMainSection .AboutUsLeft{
+    margin-bottom: 0px;
+}
+/* Blog Daitles end */
+
+/* Contact Us start */
+.ContactUSDiv{
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    border-radius: 9px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.MapDiv{
+    padding: 0 10px;
+    height: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+}
+
+.MapDiv .mapouter{
+    border-radius: 9px;
+    overflow: hidden;
+    /* height: 80%;
+    width: 90%; */
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.ContactUSDiv h3{
+    font-size: 36px !important;
+    font-weight: 600;
+    color: var(--logoColor-1);
+    margin-bottom: 1.5rem;
+}
+
+.Contactfrom{
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+}
+
+.Contactfrom label{
+    margin-bottom: 0.5rem;
+    font-size: 19px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.Contactfrom input{
+    width: 100%;
+    float: left;
+    border-radius: 21px;
+    height: 37px;
+    border: none;
+    padding: 0 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px var(--logoColor-1);
+}
+
+.Contactfrom textarea{
+    width: 100%;
+    float: left;
+    max-width: 400px;
+    border-radius: 21px;
+    height: 100px;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    outline: none;
+    box-shadow: 0 0 5px var(--logoColor-1);
+}
+
+.Contactfrom button{
+    padding: 8px 38px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: .7rem;
+    background-color: var(--logoColor-1);
+}
+
+.Contactfrom button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.Contactfrom input:focus{
+    border: 1px solid var(--logoColor-1); 
+}
+
+.Contactfrom textarea:focus{
+    border: 1px solid var(--logoColor-1); 
+}
+
+.PerContactD{
+    padding: 10px;
+}
+
+.ContactAdreSec{
+    max-width: 1200px;
+    background: #e6e6e6;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.AddressDiv{
+    display: flex;
+}
+
+.AddressI{
+    font-size: 28px;
+    color: var(--logoColor-1);
+    margin-right: 1rem;
+}
+
+.AddressDiv p{
+    margin-bottom: .5rem;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.AddressDiv{
+    margin-bottom: 20px;
+    margin-right: .5rem;
+}
+/* Contact Us end */
+
+/* About Us start */
+.AboutUsBanner{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 300px;
+    padding: 0;
+}
+
+.BannerEihttext .HerosTextunder{
+    text-align: center;
+}
+
+.BannerEihttext .HerosText{
+    justify-content: right;
+    padding-right: 5%;
+}
+
+.AboutTextDiv h3{
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.AboutTextDiv p{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.AboutProvide{
+    background-color: var(--section-bg);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px !important;
+}
+
+.AboutProvide h3{
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.PerProvide i{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--logoColor-1);
+}
+
+.PerProvide h4{
+    color: var(--logoColor-1);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+/* About Us end */
+
+/* Login page start */
+.LoginSection{
+    padding-top: 35px;
+}
+
+.LoginSection .container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.LoginDiv{
+    max-width: 1200px;
+    background-color: var(--section-bg);
+    border-radius: 12px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+
+.ImageSite{
+    padding: 0;
+}
+
+.ImageSite img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.FromSite{
+    padding: 30px 10px;
+}
+
+.FromSite h4{
+    font-weight: 600;
+    color: var(--logoColor-1);
+    margin-bottom: 30px;
+}
+
+.loginForm{
+    max-width: 400px;
+    margin: auto;
+}
+
+.loginForm label,
+.loginForm input{
+    display: block;
+    width: 100%;
+}
+
+.loginForm label{
+    margin-bottom: 0.5rem;
+    font-size: 19px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.loginForm input{
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 5px var(--logoColor-1);
+}
+
+.loginForm input:focus{
+    border: 1px solid var(--logoColor-1);
+}
+
+.loginForm button{
+    font-weight: 500;
+    padding: 7px 33px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.SwitchOthers{
+    margin-top: 30px;
+}
+
+.SwitchOthers a:not(:last-child){
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border-right: 2px solid black;
+}
+
+.orLogin{
+    margin-top: 35px;
+}
+
+.HrOr{
+    position: relative;
+}
+
+.HrOr span{
+    position: absolute;
+    top: -17px;
+    left: 49%;
+    background-color: var(--section-bg);
+    padding: 5px;
+    font-weight: 600px;
+}
+
+.SocialLogin{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialLogin div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 5px #9f9f9f;
+    font-size: 22px;
+}
+
+.SocialLogin div:not(:last-child){
+    margin-right: .5rem;
+}
+
+.LoginBtn{
+    color: white !important;
+    width: 100%;
+    height: 100%;
+}
+/* Login page end */
+
+/* SingIn start */
+.RegisterImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterImage img{
+    height: 480px;
+    width: auto;
+}
+/* SingIn end */
+
+/* forgot passoward start */
+.Forgot{
+    padding-top: 40px;
+}
+
+.ForgetSection{
+    background: none;
+    box-shadow: none;
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--section-bg);
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+}
+/* forgot passoward end */
+
+/* cart page start */
+.CartTitle{
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--logoColor-1);
+}
+
+.table-responsive{
+    border: 1px solid var(--logoColor-1);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.table-responsive table{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.table-responsive thead{
+    border-bottom: 1px solid var(--logoColor-1);
+}
+
+.table-responsive tr:not(:last-child){
+    border-bottom: 1px solid var(--logoColor-1);
+}
+
+.product-count .Incement{
+    width: 141px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+.product-count .Incement .Plus,
+.product-count .Incement .Minnus{
+    font-size: 19px;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+}
+
+.product-count .Incement .Plus:hover,
+.product-count .Incement .Minnus:hover{
+    background-color: white;
+    color: black;
+}
+
+.cart-delete{
+    padding:5px  10px !important;
+    border: 1px solid var(--logoColor-1);
+    background: none !important;
+    color: var(--logoColor-1);
+}
+
+.cart-delete:hover{
+    background: var(--logoColor-2) !important;
+    color: white;
+    border: transparent;
+}
+
+.product-img{
+    height: 49px;
+    width: 51px;
+    border-radius: 5px;
+}
+
+.btn-box{
+    background: var(--logoColor-1);
+    width: 222px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 11px;
+    color: white;
+}
+
+.btn-box a{
+    color: white;
+}
+
+.btn-box:hover{
+    background: var(--logoColor-2);
+}
+
+.CostCart{
+    border: 1px solid black;
+    border-radius: 12px;
+    padding-bottom: 10px;
+}
+
+.CostCart h4{
+    padding: 6px 14px;
+    padding: 7px 10px;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--logoColor-1);
+    border-bottom: 1px solid black;
+}
+
+.TotalCost{
+    padding: 5px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AllCost{
+    border-bottom: 1px dotted var(--logoColor-1);
+    margin-bottom: .7rem;
+}
+
+.ShopBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ShopBtn .btn-box{
+    margin-bottom: .5rem;
+}
+/* cart page end */
+
+/* trams and condition start*/
+.TermsAndCond .AboutUsLeft{
+    margin-bottom: 0 !important;
+}
+/* trams and condition start*/
+
+/* order traking page start*/
+.OrderSection {
+    color: #000;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    max-width: 800px;
+}
+
+.icon-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.icon-content p{
+    margin-bottom: 0;
+}
+
+.icon-content img{
+    width: 74px;
+    height: auto;
+}
+
+.icon-content {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    z-index: 0;
+    background-color: var(--section-bg);
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.top {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-white{
+    color: white;
+    font-weight: 500;
+    padding: 7px 33px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-white:hover{
+    color: white;
+    background-color: var(--logoColor-2);
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px;
+} 
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: var(--logoColor-1) !important;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: var(--logoColor-2);
+
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: var(--logoColor-1);
+}
+
+#progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.OrderSection .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+
+.icon-content { 
+    padding-bottom: 20px;
+}
+
+.ProductTracking img{
+    width: 60px;
+    border-radius: 6px;
+    margin-top: .5rem;
+}
+
+.ProductTracking span{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--logoColor-1);
+}
+
+.ProductTracking span .ti{
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: .8rem !important;
+}
+
+.CancleBtn{
+    padding: 7px !important;
+    font-size: 17px;
+    width: 94px;
+    margin-bottom: .5rem;
+    margin-left: calc(100%-94px) !important;
+    float: right;
+}
+
+.CancBTnDIv{
+    display: flex;
+}
+
+/* user profile start */
+.UserProfile{
+    padding-top: 50px;
+}
+
+.MenuDaitels .active{
+    background: none;
+    color: black;
+}
+
+.NavigatinSection{
+    padding-top: 2.2rem;
+}
+
+.UserMenu button{
+    max-width: auto;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: left;
+    border-left: 4px solid rgba(255, 166, 0, 0);
+    margin-bottom: .8rem !important;
+    color: #5a5959 !important;
+    font-weight: 700;
+}
+
+.UserMenu .active{
+    border-left: none;
+    color: var(--logoColor-2) !important;
+}
+
+.MenuDaitels.tab-content{
+    padding: 0.2rem 1rem !important;
+    color: black !important;
+    margin: 0;
+}
+
+.tablist{
+    padding: 10px 2px;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgb(249 249 249);
+    box-shadow: 0 0 5px #cbcbcb;
+}
+
+.MenuDaitels.tab-content .active{
+    color: black !important;
+}
+
+.MenuDaitels.tab-content h5{
+    font-weight: 600 !important;
+    color: #525252 !important;
+    text-transform: uppercase;
+}
+
+.MenuDaitels.tab-content .UnderAll,
+.MenuDaitels.tab-content .active .UnderAll{
+    color: #323232 !important;
+}
+
+.MenuDaitels.tab-content .UnderAll h5,
+.MenuDaitels.tab-content .active .UnderAll h5{
+    font-size: 17px;
+    font-weight: 500 !important;
+    margin-bottom: 1rem;
+}
+
+.UnderAll{
+    margin-top: 1.5rem;
+    font-size: 15px !important;
+}
+
+.UlDivMyAcount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.UlDivMyAcount ul li{ 
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.UlDivMyAcount ul .tititle{ 
+    font-weight: 700 !important;
+}
+
+.UlDivMyAcount li a:hover{ 
+    color: var(--logoColor-2);
+}
+
+.UnderAll2{
+    margin-top: 1.2rem;
+}
+
+.TableSpan{
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+.OderTable{
+    border: 1px solid black;
+}
+
+.OrderList {
+    margin-top: 2rem;
+}
+
+.OrderList a:hover {
+    color: var(--logoColor-2);
+}
+
+.OrderList tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.OrderList img{
+    width: 100%;
+}
+
+.ORderResponsive{
+    box-shadow: 0 0 3px #dddddd;
+    border-radius: 7px;
+    margin-bottom: 0;
+}
+
+.ORderResponsive:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.ORderResponsive .TableSpan{
+    padding: 8px;
+    font-size: 14px;
+    background: #d9d9d9;
+} 
+
+.ORderResponsive .Oderable{
+    padding: 0;
+    margin: 0;
+} 
+
+.OrderList button{
+    outline: 0px;
+    background-color: var(--logoColor-1);
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    border-radius: 22px;
+    font-size: 13px;
+}
+
+.OrderList button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.WishBTn2{
+    padding:5px  10px !important;
+    border: 1px solid var(--logoColor-1) !important;
+    background: none !important;
+    color: var(--logoColor-1) !important;
+}
+
+.WishBTn2:hover{
+    border: 1px solid var(--logoColor-2) !important;
+    color: white !important;
+}
+
+.AddressAddbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AddressAddbtn button{
+    border: none;
+    outline: none;
+    background-color: var(--logoColor-1);
+    padding: 5px 10px;
+    border-radius: 23px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.AddressAddbtn button:hover{
+    background-color: var(--logoColor-2);
+}
+
+.addressInfoFrom{
+    display: none;
+}
+
+.addressInfoFrom,
+.phaymentInfoFrom{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.PasswordEdit{
+    margin-top: 2.5rem;
+    text-align: center
+}
+
+.addressInfoFrom div,
+.phaymentInfoFrom div div,
+.PasswordEdit div{
+    margin-bottom: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.addressInfoFrom div label,
+.phaymentInfoFrom div div label,
+.PasswordEdit div label{
+    margin-right: .4rem;
+    width: 150px;
+}
+
+.addressInfoFrom input,
+.phaymentInfoFrom input,
+.PasswordEdit input{
+    height: 35px;
+    border: 1px solid #9f9d9d;
+    width: calc(80% - 150px);
+}
+
+.addressInfoFrom input:focus,
+.phaymentInfoFrom input:focus,
+.PasswordEdit input:focus{
+    border: 1px solid var(--logoColor-2);
+    box-shadow: 0 0 5px var(--logoColor-2);
+}
+
+.addressInfoFrom p,
+.phaymentInfoFrom p,
+.PasswordEdit p{
+    border: none;
+    outline: none;
+    background-color: var(--logoColor-1);
+    padding: 8px 16px;
+    color: white !important;
+    font-weight: 500;
+    border-radius: 27px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.addressInfoFrom p:hover,
+.phaymentInfoFrom p:hover,
+.PasswordEdit p:hover{
+    background-color: var(--logoColor-2);
+}
+
+.phaymentInfoFrom h3{
+    color: #2c66af;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.displayblock{
+    display: block;
+}
+
+#PaymentFrom{
+    display: none;
+}
+
+.displayblock{
+    display: block ;
+}
+
+.collectedAddress{
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 2.2rem;
+}
+
+.collectedAddress .BoxADD{
+    box-shadow: 0 0 5px #cfcccc;
+    padding: 13px 23px;
+    border-radius: 10px;
+}
+
+.AddEdit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.AddressBox:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.AddressBox span{
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.AddressBoolRadio{
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+
+.radioSide{
+    padding-left: 0;
+}
+
+.LocatinType{
+    background-color: rgb(211 211 211);
+    padding: 3px 5px;
+    display: inline-block !important;
+    border-radius: 5px;
+    color: var(--logoColor-1);
+}
+
+.EditAll{
+    text-align: right;
+}
+
+.EditAll:hover{
+    color: var(--logoColor-2);
+    cursor: pointer;
+}
+
+.AddresSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddresSubmit p:not(:last-child){
+    margin-right: .5rem;
+}
+
+.CalcleAdd{
+    background-color: rgb(139, 139, 139) !important;
+    color: var(--logoColor-1) !important;
+}
+
+.CheckBoxDiv label{
+    width: 148px !important;
+}
+
+.CheckBox{
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: .5rem;
+}
+
+.EmailChnage{
+     display: block !important;
+}
+
+.PaymentAccountsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 1px solid rgb(71, 71, 71);
+    border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+.ImageAndNumber{
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+}
+
+.ImageAndNumber img{
+    width: 31px;
+    border-radius: 6px;
+    margin-right: .7rem;
+}
+
+.PaymentAccountsDiv .PaymentDelet{
+    background-color: #e4e4e4;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+.PaymentAccountsDiv .PaymentDelet:hover{
+    border: 1px solid #af0707;
+    color: #af0707;
+}
+
+/* user profile end */
+/* Blog page End */
+/* responsive start */
+
+@media screen and (min-width: 1200px) {
+    .Compute-20{
+        width: 20%;
+    }
+
+    .OfferPage .Product{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .NavigatinSection{
+        padding-top: 60px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #Orders{
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .lovehide{
+        display: none;
+    }
+
+    .IconDiv{
+        margin-right: 1.5rem !important;
+    }
+
+    .HerosSection {
+        margin-top: 160px;
+    }
+
+    .CampaignsSection{
+        margin-top: 152px;
+    }
+
+    .Product{
+        margin-bottom: 20px;
+    }
+
+    .LastWeekTextCrosul .Product{
+        margin-bottom: 0px;
+    }
+
+    .CatagorySection{
+        padding-bottom: 20px;
+    }
+
+    .BannerPadding{
+        padding-top: 30px;
+    }
+    
+    .tab-content .Product{
+        margin-bottom: 0px;
+    }
+    
+    .PopulerProduct{
+        margin-bottom: -20px;
+    }
+
+    .VagetableSection{
+        padding-top: 23px;
+    }
+
+    .PeoudctBigImgage {
+        height: 233px;
+    }
+}
+
+/* nav for tabe and mobile start */
+@media screen and (min-width: 1024px) {
+    .BlogSection{
+        padding-top: 50px;
+    } 
+
+    .BlogMainSection{
+        padding-top: 30px;
+    }
+
+    .cartPading2{
+        padding-top: 6px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .productBanner{
+        padding-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hideOnPhone{
+        display: none;
+    }
+
+    .ShowInTabe{
+        display: block;
+    }
+
+    .HerosSection{
+        margin-top: 81px;
+    }
+
+    .CampaignsSection{
+        margin-top: 79px;
+        padding-top: 10px;
+    }
+
+    .Categorieitem{
+        width: 20%;
+    }
+    
+    .SectionPadding{
+        padding-top: 25px;
+    }
+
+    .Titelh4 {
+        margin-bottom: 15px;
+    }
+
+    .BannerPadding{
+        padding-top: 10px;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ProductContiner{
+        padding-left: 7px;
+        padding-right: 10px;
+        margin: auto;
+    }
+
+    .ProductContiner .CatagorySection {
+        padding-top: 20px;
+    }
+
+    .HerosTextunder h5{
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+
+   .HerosTextunder button {
+       box-shadow: 0 0 5px #585858;
+       padding: 8px 24px;
+       font-size: 16px;
+   }
+
+    footer ul{
+        margin-bottom: 20px;
+    }
+    
+    .CampaignsBannerBotom{
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .MainCatagoriDiv{
+        padding-top: 30px;
+    }
+
+    .BlogBanner{
+        margin-top: 10px;
+    }
+
+    .AboutProvide h3{
+        margin-bottom: 10px;
+    }
+    
+    .AboutProvide{
+        margin-top: 40px;
+        padding-top: 23px !important;
+        padding-bottom: 10px;
+        margin-bottom: 20px !important;
+    }
+    
+    .VagetableSection{
+        padding-top: 10px;
+    }
+
+    .productBanner{
+        padding-top: 20px;
+    }
+
+    .ContactAdreSec {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .PathSuport{
+        padding-top: 20px;
+    }
+
+    .CostDiv{
+        margin-bottom: 40px;
+    }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
+
+    .UserProfile {
+        padding-top: 35px;
+    }
+
+    .MenuDaitels .tab-pane {
+        padding-bottom: 0;
+    }
+
+    .ProductImg {
+        height: 200px;
+    }
+}
+
+/* for tabe uneversal */
+@media screen and (max-width: 962px) and (min-width: 601px) {
+    .ProductBtn button {
+        width: 167px;
+        font-size: 16px;
+    }
+
+    .RightSide .ProductBtnIncement{
+        width: 165px;
+    }
+
+    .RightSide .Incement {
+        width: 165px;
+        padding: 0px 6px;
+        font-size: 20px;
+    }
+
+    .RightSide .Incement .Plus,
+    .RightSide .Incement .Minnus {
+        font-size: 23px;
+        height: 31px;
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Catagori{
+        display: none;
+    }
+
+    .AllProduct{
+        padding: 2px;
+    }
+
+    .CatagorisPage {
+        margin-top: 84px;
+    }
+
+    .AllProductImg{
+        height: 150px;
+    }  
+    
+    .PerBlogDIvCol:not(:last-child){
+        padding-bottom: 15px;
+    } 
+
+    .container.ProductContiner{
+        margin-bottom: 20px;
+    }
+
+    .MainCatagoriDiv{
+        padding-right: 0;
+    }
+
+    .AllProductImg{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .BlogBnnar {
+        padding-bottom: 10px;
+    }
+    
+    .ReolyForm{
+        margin-bottom: 0px !important;
+    }
+
+    .RightRelated{
+        display: none;
+    }
+
+    .ReviewAndDis{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .UserMenu button{
+        width: 100%;
+    }
+
+    .UserMenu .active {
+        border-bottom: none;
+    }
+    
+    .PerServocesDiv .Freeshoping{
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+    
+    .PerServocesDiv .ServicesImg{
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    .PerServocesDiv {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .SectionPadding{
+        padding-top: 20px;
+    }
+
+    .CatagorySection {
+        padding-top: 20px;
+    }
+
+    .Titelh4 {
+        margin-bottom: 12px;
+    }
+
+    .BannerImage{
+        height: 110px;
+    }
+
+    .BannerPadding {
+        padding-top: 10px;
+    }
+
+    .BannerDiv{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    .LastWeekProducr{
+        margin-top: 20px;
+    }
+
+    .HerosTextunder p {
+        font-size: 55px;
+        font-size: 11px;
+    }
+
+    .HerosTextunder h5 {
+        font-size: 19px;
+    }
+
+    .HerosTextunder button {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 2rem;
+        height: 2rem;
+        padding: 3px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 37px;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0rem;
+    }
+
+    .carousel-dark .carousel-indicators [data-bs-target], 
+    .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+    }
+
+    .LatestNews h4{
+        font-size: 18px !important;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+    .mainProdictDiv{
+        padding: 0;
+    }
+
+    .ProductDaitlesdiv .row{
+        padding: 0;
+    }
+
+    .PeoudctBigImgage{
+        margin-bottom: 20px;
+    }
+
+    .PerBlogDIv{
+        padding-top: 0;
+    }
+
+    .AboutUsLeft{
+        padding: 0;
+        padding-right: 0 !important;
+    }
+
+    .PerBlogDIv{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .AboutUsLeft{
+        margin-bottom: 15px;
+    }
+
+    .MapDiv{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+
+    .cartPadding{
+        padding: 0;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .icon{
+        width: 39px !important;
+        height: 42px !important;
+        margin: auto;
+        margin-bottom: 5px !important;
+    }
+
+    .VagetableSection{
+        padding-top: 0px !important;
+        margin-top: 0;
+    }
+
+    .ContactAdreSec {
+        padding-top: 10px;
+    }
+
+    .AddressDiv {
+        margin-bottom: 0px;
+    }
+
+    .AboutUsRightRM{
+        margin-top: 20px;
+    }
+
+    .BlogBnnar{
+        padding-top: 0px !important;
+    }
+
+    .AboutUsLeft img{
+        margin-bottom: .5rem;
+    }
+
+    .DaitlesPerDIv:not(:last-child){
+        margin-bottom: 10px;
+    }
+    
+    .ReolyForm{
+        margin-bottom: 20px !important;
+    }
+
+    .RightPerDiv{
+        margin-bottom: 10px;
+    }
+
+    .PerBlogDIv {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .DaitlesPerDIv {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .BlogComment {
+        max-width: 850px;
+        margin: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    
+    .UserMenu{
+        margin-bottom: 1rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .MenuDaitels {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        width: 100%;
+    }
+
+    .MenuDaitels.tab-content{
+        padding: 0.2rem 5px !important;
+    } 
+
+    .UserMenu div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .UserMenu div button{
+        margin-right: 19px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .TableSpan{
+        width: 150%;
+    }
+
+    .table-responsive table tr{
+        width: 150%;
+        overflow: scroll;
+        padding: 7px 0;
+    }
+    
+    .OrderList {
+        margin-top: .8rem;
+    }
+
+    .NavigatinSection{
+        padding-bottom: 0;
+    }
+    .UnderAll {
+        margin-top: .8rem;
+    }
+
+    .UlDivMyAcount ul{
+        width: 100%;
+    }
+
+    .MenuDaitels.tab-content .UnderAll h5, 
+    .MenuDaitels.tab-content .active .UnderAll h5{
+        margin-bottom: 0.8rem;
+    }
+
+    .UlDivMyAcount ul:not(:last-child){
+        margin-bottom: .5rem;
+    }
+
+    .collectedAddress,
+    .addressInfoFrom,
+    .PasswordEdit{
+        margin-top: 1rem;
+    }
+
+    .addressInfoFrom div label, .PasswordEdit div label{
+        width: 127px;
+        margin-right: .2rem;
+    }
+
+    .addressInfoFrom input, .PasswordEdit input{
+        height: 29px;
+        width: calc(98% - 137px);
+    }
+
+    .AddresSubmit{
+        margin-bottom: 0 !important;
+    }
+
+    .PerBlogDIvCol{
+        padding: 0 5px;
+    }
+
+    .PerBlogDIvCol:not(:last-child){
+        padding-bottom: 5px;
+    }
+
+    .DaitlesPerDIv{
+        margin-bottom: 1.2rem;
+    }
+
+    .PerBlogDIv:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .PathSuportSEcio {
+        margin-bottom: 2rem;
+    }
+
+    .PerBlogDIv img{
+        width: 100%;
+    }
+
+    .PerBlogDIv{
+        padding: 15px;
+        margin-bottom:  1rem;
+        padding-bottom: 25px;
+    }
+
+    .AboutUsLeft{
+        padding: 10px;
+        padding-right: 10px !important;
+    }
+
+    .SupportListDiv h4{
+        margin-bottom: 10px;
+    }
+
+    .SupportPertpe{
+        padding: 10px 11px;
+        margin-bottom: .2rem !important;
+    }
+
+    .HelpeHeros {
+        padding: 24px 0;
+        padding-bottom: 13px !important;
+    }
+
+    .ReolyForm button{
+        border: none;
+        padding: 8px 18px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+
+    .LoginSection {
+        padding-top: 20px;
+    }
+
+    .ImageSite{
+        padding-top: 23px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ImageSite img {
+        width: 50%;
+        margin: auto;
+        border-radius: 12px;
+    }
+
+    .RegisterImage img{
+        height: auto;
+    }
+
+    .table-responsive {
+        margin-bottom: 24px;
+    } 
+
+    .CostDiv{
+        margin-bottom: 20px;
+    }
+
+    .LastFooter{
+        margin-top: 0px;
+    }
+
+    .MenuDaitels .tab-content{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .ORderResponsive{
+        margin-bottom: 10px !important;
+        padding-bottom: 5px;
+    }
+    
+
+    .PerServocesDiv{
+        display: flex;
+        align-items: start;
+    }
+
+    .PerServocesDiv .Freeshoping{
+        max-width: min-content;
+        margin: none;
+    }
+
+    .ServicesText{
+        text-align: left;
+    }
+
+    .PerServocesDiv3rd{
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 685px){
+    .Categorieitem{
+        margin-bottom: 20px;
+    }
+
+    .CatagoriPadding{
+        margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width: 685px) {
+    .Categorieitem{
+        width: 33.33%;
+    }
+
+    .moibe-50{
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ProductBtnIncement button {
+        font-size: 14px;
+        padding: 5px 12px;
+        margin-bottom: 12px;
+    }
+
+    .Titelh4 h4 {
+        font-size: 24px !important;
+        font-weight: 600;
+    }
+
+    .LatestNews h4{
+        font-size: 16px !important;
+    }
+
+    .icon-content{
+        display: block;
+        text-align: center;
+    }
+
+    #progressbar li:after{
+        content: '';
+        height: 10px;
+        top: 14px;
+    }
+
+    #progressbar li:before {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 15px;
+    }
+
+    #progressbar li {
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .OrderTop{
+        display: block;
+    }
+
+    .ProductTracking{
+        margin-bottom: 10px;
+    }
+
+    .BlogBnnar{
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Question{
+        margin-bottom: 1.5rem;
+    }
+
+    .suportMain .AnswerDiv{
+        padding: 0;
+    }
+
+    .HelpeSearch .Searchbtn{
+        right: 30px;
+    }
+
+    .AnswerDiv .tab-content {
+        padding-bottom: .7rem !important;
+    }
+
+    .SupportListDiv {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .SupportPertpe{
+        padding: 10px 4px !important;
+    }
+
+    .ProductImg {
+        height: 150px;
+    }
+
+    .BannerDiv{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .BgBlack{
+        padding-top: 10px;
+    }
+    
+    .ProductBg h1{
+        font-size: 29px;
+    }
+
+    .ProductBg {
+        height: 250px;
+    }
+
+    .ProductDaitlesdiv{
+        border-radius: 9px;
+        padding: 7px;
+    }
+
+    .ProductBtn button {
+        width: 151px;
+        font-size: 14px;
+    }
+
+    .ProductBtn button:not(:last-child) {
+        margin-right: 0.5rem;
+        margin-bottom: 14px;
+    }
+
+    .PersonImg {
+        height: 40px;
+        width: 40px;
+    }
+
+    .AboutUsRight{
+        margin-bottom: -18px;
+    }
+
+    .RightPerDiv {
+        padding-bottom: 20px;
+    }
+
+    .DaitlesPerDIv img{
+        max-height: 200px;
+    }
+
+    .OrderSection{
+        padding: 0 8px;
+    }
+
+    .ProductContiner .CatagorySection{
+        padding-top: 20px;
+    }
+
+    .ProductContiner{
+        margin-bottom: 20px;
+    }
+
+    .ProductContiner .row .Titelh4{
+        margin-bottom: 2px;
+    }
+
+    .CatagorySection {
+        padding-bottom: 10px;
+    }
+
+    .col-lg-6.col-md-6.col-sm-6.BannerDiv:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .CartTitle {
+        margin-bottom: 21px;
+    }
+
+    .MenuDaitels .tab-pane{
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 0;
+    }
+
+    .UserProfile {
+        padding-top: 20px;
+    }
+
+    .PerServocesDiv{
+        border-right: none !important;
+    }
+
+    .PerServocesDiv:not(:last-child){
+        border-bottom: 1px solid rgb(151, 151, 151);
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .owl-item .item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 575px)  {
+    .Width50Un{
+        width: 50%;
+    }
+
+    .PerServocesDiv:not(:last-child) {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .icon-content{
+        font-size: 12px !important;
+    }
+
+    .OrderSection{
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .nav-tabs li button {
+        padding: 6px 16px;
+        font-size: 18px;
+    }
+
+    .nav-tabs li, 
+    .nav-tabs li button {
+        width: 135px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .UserMenu div button{
+        margin-right: 5px;
+    }
+}
+
+:root {
+    --section-bg: #f3f4ff;
+    --logoColor-1: rgb(10 74 99);
+    --logoColor-2: rgb(38 99 163);
+    --servocehover: #e79855;
+    --navColor: rgb(216, 216, 216);
+    --navIconColor: red;
+    --navmidbg: #75b535;
+    --TopNev: #3c516a;
+    --DestopCatagori: #3e6a10;
+}
